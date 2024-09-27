@@ -1,16 +1,13 @@
-# BOT_TOKEN = '7576369526:AAG47xhqDOZIj1NleKp6TY02hKDWeB3xLtI'
-# CHANNEL_ID = '@+rw--lmgjGEw3ZmE9'  # Your private channel ID or username
-
 from telegram import Update
 from telegram.ext import Application, CommandHandler, ContextTypes
 
-# Replace with your bot token
+
 BOT_TOKEN = '7576369526:AAG47xhqDOZIj1NleKp6TY02hKDWeB3xLtI'
-CHANNEL_ID = -1002253868456  # Your private channel ID or username
+CHANNEL_ID = -1002253868456 
 
 # Function to handle the /start command
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    # Check if a parameter was passed (like /start 12345)
+    # Check if a parameter was passed (like /start)
     if context.args:
         video_id = context.args[0]  # The first argument after /start
         try:
